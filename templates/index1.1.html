@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Time Zone Converter</title>
+</head>
+
+<body>
+  <h1>Time Zone Converter</h1>
+  <form action="/convert" method="post">
+    <label for="base_country">Base Country:</label>
+    <input type="text" id="base_country" name="base_country" required>
+    <br>
+    <label for="base_timezone">Base Timezone:</label>
+    <input type="text" id="base_timezone" name="base_timezone" required>
+    <br>
+    <label for="dest_country">Destination Country:</label>
+    <input type="text" id="dest_country" name="dest_country" required>
+    <br>
+    <label for="dest_timezone">Destination Timezone:</label>
+    <input type="text" id="dest_timezone" name="dest_timezone" required>
+    <br>
+    <label for="time_format">Time Format:</label>
+    <input type="text" id="time_format" name="time_format" required>
+    <br>
+    <input type="submit" value="Convert">
+  </form>
+</body>
+
+</html>

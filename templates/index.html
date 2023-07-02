@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Zone Converter</title>
+</head>
+<body>
+    <h1>Time Zone Converter</h1>
+    <form action="/convert" method="POST">
+        <label for="base_timezone">Base Time Zone:</label>
+        <select name="base_timezone">
+            {% for timezone in base_timezones %}
+                <option value="{{ timezone }}">{{ timezone }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <label for="dest_timezone">Destination Time Zone:</label>
+        <select name="dest_timezone">
+            {% for timezone in dest_timezones %}
+                <option value="{{ timezone }}">{{ timezone }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <label for="time_format">Time Format:</label>
+        <select name="time_format">
+            <option value="24">24 Hours</option>
+            <option value="12">12 Hours</option>
+        </select>
+        <br>
+        <input type="submit" value="Convert">
+    </form>
+</body>
+</html>

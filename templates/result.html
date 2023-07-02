@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Conversion Result</title>
+    <style>
+        body {
+            background-color: black;
+            color: cyan;
+            font-family: "ds-digital", sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Time Conversion Result</h1>
+    <h2>{{ base_timezone }}: {{ base_time }}</h2>
+    <h2>{{ dest_timezone }}: {{ dest_time }}</h2>
+    <h2>Time Difference: {{ time_diff }} hours</h2>
+</body>
+
+</html>
